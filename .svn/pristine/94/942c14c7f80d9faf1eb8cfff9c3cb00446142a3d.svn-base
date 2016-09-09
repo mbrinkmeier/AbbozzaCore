@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/abbozza.css">
+        <script src="js/lib/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/lib/blockly/blockly_compressed.js" type="text/javascript"></script>
+        <script src="js/lib/blockly/blocks_compressed.js" type="text/javascript"></script>
+        <script src="js/lib/blockly/msg/js/en.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/abbozza.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/Locale.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/Connection.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/SymbolDB.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/ToolboxMgr.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/gui/sliders.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/gui/buttons.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/blocks/Main.js" type="text/javascript"></script>
+        <script src="js/abbozza/core/context.js" type="text/javascript"></script>
+        <script src="js/abbozza/terminal/terminal.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="js/lib/jquery.terminal.css">
+	<script src="js/lib/jquery.terminal-0.8.8.min.js" type="text/javascript"></script>
+	<!--script src="js/lib/jquery-mousewheel.js" type="text/javascript"></script-->
+
+       
+    </head>
+    <body onload="Abbozza.init(document.getElementById('toolbox'))">
+        <div id="all_panel">
+            all_panel
+            <div id="header_panel">
+                <canvas id="button_load" class="button" width="32px" height="32px" onClick="Abbozza.load()"></canvas>
+                <canvas id="button_save" class="button" width="32px" height="32px" onClick="Abbozza.save()"></canvas>
+                <canvas id="button_new" class="button" width="32px" height="32px" onClick="Abbozza.new()"></canvas>
+                <canvas id="button_settings" class="button" width="32px" height="32px" onClick="Abbozza.settings()"></canvas>
+                <canvas id="button_info" class="button" width="32px" height="32px" onClick="Abbozza.info()"></canvas>
+            </div>
+            <div id ="main_panel">
+                <div id="left_panel">
+                    <div id="context_panel">
+                    </div>
+                    <div id="control_panel">
+                       <canvas id="button_step" class="button" width="32px" height="32px" onClick="Abbozza.step()"></canvas>
+                       <canvas id="button_play" class="button" width="32px" height="32px" onClick="Abbozza.play()"></canvas>
+                       <canvas id="button_stop" class="button" width="32px" height="32px" onClick="Abbozza.stop()"></canvas>
+                    </div>
+                    <div id="vslider_panel"></div>
+                    <div id="misc_panel">misc_panel</div>
+                </div>
+                <div id="hslider_panel"></div>
+                <div id="workspace_panel">
+                    <div id="blocklyDiv">
+                    </div>
+                </div>
+            </div>
+            <div id="footer_panel"></div>
+<!--        <div id="context">
+            <div id="terminal" style="overflow:scroll">
+            </div>
+            <button onclick="myTerm.resume(); myTerm.focus();">Weiter</button>
+        </div>
+        <div id="workspace">Workspace</div> -->
+
+	<xml id="startBlocks" style="display: none">
+            <block type="main" id="main" inline="false" x="100" y="20"></block>
+            <!--block type="devices" id="block_global_vars" inline="false" x="500" y="20"></block-->
+            <!--block type="func_setup" id="func_setup" inline="false" x="100" y="20"></block>
+            <block type="func_loop" id="func_loop" inline="false" x="400" y="20"></block-->
+	</xml>
+
+        </div>    
+    </body>
+</html>

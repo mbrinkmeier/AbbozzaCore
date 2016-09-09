@@ -1,0 +1,1086 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>jquery/jquery-mousewheel · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="jquery/jquery-mousewheel" name="twitter:title" /><meta content="jquery-mousewheel - A jQuery plugin that adds cross-browser mouse wheel support." name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/70142?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/70142?v=3&amp;s=400" property="og:image" /><meta content="jquery/jquery-mousewheel" property="og:title" /><meta content="https://github.com/jquery/jquery-mousewheel" property="og:url" /><meta content="jquery-mousewheel - A jQuery plugin that adds cross-browser mouse wheel support." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="D95D3368:6921:472A20A:5669E620" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
+<meta content="Rails, view, files#disambiguate" data-pjax-transient="true" name="analytics-event" />
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="c6e0c221d08dc9db21d4f6308abccf96c467f3a2" name="form-nonce" />
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-c4e84b31ad83e3338ffded095ee7f4bd13abea9e4e85427bce41c960343dae2e.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-dbb634f9787dac887112e206dd1bc44b0b513564a9ab6a760d2575625ac399e8.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="7232235cce526ab2b2d5a0a11379c3ea">
+
+      
+  <meta name="description" content="jquery-mousewheel - A jQuery plugin that adds cross-browser mouse wheel support.">
+  <meta name="go-import" content="github.com/jquery/jquery-mousewheel git https://github.com/jquery/jquery-mousewheel.git">
+
+  <meta content="70142" name="octolytics-dimension-user_id" /><meta content="jquery" name="octolytics-dimension-user_login" /><meta content="63557" name="octolytics-dimension-repository_id" /><meta content="jquery/jquery-mousewheel" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="63557" name="octolytics-dimension-repository_network_root_id" /><meta content="jquery/jquery-mousewheel" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/jquery/jquery-mousewheel/commits/master.atom" rel="alternate" title="Recent Commits to jquery-mousewheel:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out   env-production linux vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fjquery%2Fjquery-mousewheel" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/jquery/jquery-mousewheel/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/jquery/jquery-mousewheel/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-repo-pjax-container" class="context-loader-container js-repo-nav-next" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fjquery%2Fjquery-mousewheel"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/jquery/jquery-mousewheel/watchers">
+    172
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fjquery%2Fjquery-mousewheel"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/jquery/jquery-mousewheel/stargazers">
+      2,851
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fjquery%2Fjquery-mousewheel"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+
+    <a href="/jquery/jquery-mousewheel/network" class="social-count">
+      1,091
+    </a>
+  </li>
+</ul>
+
+    <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="octicon octicon-repo"></span>
+  <span class="author"><a href="/jquery" class="url fn" itemprop="url" rel="author"><span itemprop="title">jquery</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/jquery/jquery-mousewheel" data-pjax="#js-repo-pjax-container">jquery-mousewheel</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <a href="/jquery/jquery-mousewheel" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /jquery/jquery-mousewheel">
+    <span class="octicon octicon-code"></span>
+    Code
+</a>
+    <a href="/jquery/jquery-mousewheel/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /jquery/jquery-mousewheel/issues">
+      <span class="octicon octicon-issue-opened"></span>
+      Issues
+      <span class="counter">9</span>
+</a>
+  <a href="/jquery/jquery-mousewheel/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /jquery/jquery-mousewheel/pulls">
+    <span class="octicon octicon-git-pull-request"></span>
+    Pull requests
+    <span class="counter">5</span>
+</a>
+    <a href="/jquery/jquery-mousewheel/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /jquery/jquery-mousewheel/wiki">
+      <span class="octicon octicon-book"></span>
+      Wiki
+</a>
+  <a href="/jquery/jquery-mousewheel/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /jquery/jquery-mousewheel/pulse">
+    <span class="octicon octicon-pulse"></span>
+    Pulse
+</a>
+  <a href="/jquery/jquery-mousewheel/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /jquery/jquery-mousewheel/graphs">
+    <span class="octicon octicon-graph"></span>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<div class="repository-meta js-details-container">
+  <span class="repository-meta-content">
+        A jQuery plugin that adds cross-browser mouse wheel support.
+  </span>
+
+</div>
+
+
+<div class="overall-summary overall-summary-bottomless">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/jquery/jquery-mousewheel/commits/master">
+            <span class="octicon octicon-history"></span>
+            <span class="num text-emphasized">
+              149
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/jquery/jquery-mousewheel/branches">
+          <span class="octicon octicon-git-branch"></span>
+          <span class="num text-emphasized">
+            4
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/jquery/jquery-mousewheel/releases">
+          <span class="octicon octicon-tag"></span>
+          <span class="num text-emphasized">
+            18
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/jquery/jquery-mousewheel/graphs/contributors">
+    <span class="octicon octicon-organization"></span>
+    <span class="num text-emphasized">
+      10
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/jquery/jquery-mousewheel/search?l=javascript">
+                <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">96.5%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/jquery/jquery-mousewheel/search?l=html">
+                <span class="color-block language-color" style="background-color:#e44b23;"></span>
+                <span class="lang">HTML</span>
+                <span class="percent">3.5%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details">
+    <span class="language-color" aria-label="JavaScript 96.5%" style="width:96.5%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+    <span class="language-color" aria-label="HTML 3.5%" style="width:3.5%; background-color:#e44b23;" itemprop="keywords">HTML</span>
+  </div>
+
+<include-fragment src="/jquery/jquery-mousewheel/show_partial?partial=tree%2Frecently_touched_branches_list"></include-fragment>
+
+<div class="file-navigation in-mid-page file-navigation-new">
+  <div class="right">
+    <div class="btn-group">
+      
+  <button class="btn btn-sm disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes" type="button">
+    New file
+  </button>
+
+
+
+      <a href="/jquery/jquery-mousewheel/find/master"
+        class="btn btn-sm empty-icon right js-show-file-finder"
+        data-pjax
+        data-hotkey="t"
+        data-ga-click="Repository, find file, location:repo overview">
+        Find file
+      </a>
+    </div>
+      <div class="file-navigation-options" data-multiple>
+
+        <div class="file-navigation-option">
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol" class="js-set-user-protocol-preference" data-form-nonce="c6e0c221d08dc9db21d4f6308abccf96c467f3a2" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6mxi5tduNKDaI+2WhFyer3K+m0eSH9WcSBD4PvJsckN2iY9fRB+zP4lCHkm5sDDs8H0hxjrfj8QCQAzbFQK1hg==" /></div>
+            <input type="hidden" name="protocol_type" value="clone">
+
+            <div class="select-menu js-menu-container js-select-menu">
+              <div class="input-group js-select-button js-zeroclipboard-container">
+                <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="input-monospace input-mini js-zeroclipboard-target js-url-field" value="https://github.com/jquery/jquery-mousewheel.git" readonly>
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+</div>
+
+              </div>
+
+              <div class="select-menu-modal-holder">
+                <div class="select-menu-modal js-menu-content" aria-hidden="true">
+                  <div class="select-menu-header">
+                    <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+                    <span class="select-menu-title">Choose a clone URL</span>
+                  </div>
+
+                  <div class="select-menu-list js-navigation-container" role="menu">
+                      <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                        <span class="select-menu-item-icon octicon octicon-check"></span>
+                        <div class="select-menu-item-text">
+                          <input type="radio" name="protocol_selector" value="http" checked>
+                          <span class="select-menu-item-heading">
+                            HTTPS
+                            (recommended)
+                          </span>
+                            <span class="description">
+                              Clone with Git or checkout with SVN using the repository's web address.
+                            </span>
+                          <span class="js-select-button-text hidden-select-button-text">
+                            <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="input-monospace input-mini js-zeroclipboard-target js-url-field" value="https://github.com/jquery/jquery-mousewheel.git" readonly>
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+</div>
+
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="select-menu-list" role="menu">
+                    <a class="select-menu-item select-menu-action" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank">
+                      <span class="select-menu-item-icon octicon octicon-question"></span>
+                      <div class="select-menu-item-text">
+                        Learn more about clone URLs
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+</form>        </div>
+
+        <div class="file-navigation-option">
+</div>
+
+
+        <div class="file-navigation-option">
+          <a href="/jquery/jquery-mousewheel/archive/master.zip"
+             class="btn btn-sm"
+             rel="nofollow"
+             data-ga-click="Repository, download zip, location:repo overview">
+            Download ZIP
+          </a>
+        </div>
+      </div>
+  </div>
+
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jquery/jquery-mousewheel/tree/3.1.x"
+               data-name="3.1.x"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="3.1.x">
+                3.1.x
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jquery/jquery-mousewheel/tree/4.0.x"
+               data-name="4.0.x"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="4.0.x">
+                4.0.x
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jquery/jquery-mousewheel/tree/gh-pages"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/jquery/jquery-mousewheel/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.13"
+                 data-name="3.1.13"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.13">3.1.13</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.12"
+                 data-name="3.1.12"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.12">3.1.12</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.11"
+                 data-name="3.1.11"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.11">3.1.11</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.10"
+                 data-name="3.1.10"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.10">3.1.10</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.9"
+                 data-name="3.1.9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.9">3.1.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.8"
+                 data-name="3.1.8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.8">3.1.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.7"
+                 data-name="3.1.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.7">3.1.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.6"
+                 data-name="3.1.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.6">3.1.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.5"
+                 data-name="3.1.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.5">3.1.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.4"
+                 data-name="3.1.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.4">3.1.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.3"
+                 data-name="3.1.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.3">3.1.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.2"
+                 data-name="3.1.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.2">3.1.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.1"
+                 data-name="3.1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.1">3.1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.1.0"
+                 data-name="3.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.0">3.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.0.6"
+                 data-name="3.0.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.6">3.0.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.0.5"
+                 data-name="3.0.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.5">3.0.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.0.4"
+                 data-name="3.0.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.4">3.0.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jquery/jquery-mousewheel/tree/3.0.3"
+                 data-name="3.0.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.3">3.0.3</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <a href="/jquery/jquery-mousewheel/pull/new/master" class="btn btn-sm btn-primary" data-pjax data-ga-click="Repository, new pull request, location:repo overview">
+      New pull request
+    </a>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+
+
+  <div class="commit-tease js-details-container">
+    <span class="right">
+      Latest commit
+      <a class="commit-tease-sha" href="/jquery/jquery-mousewheel/commit/b1c062e93b44f473022297c386d57fa7e58b6aae" data-pjax>
+        b1c062e
+      </a>
+      <time datetime="2015-07-15T18:18:15Z" is="relative-time">Jul 15, 2015</time>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@dmethvin" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/157858?v=3&amp;s=40" width="20" />
+      <a href="/dmethvin" class="user-mention" rel="contributor">dmethvin</a>
+    </span>
+
+        <a href="/jquery/jquery-mousewheel/commit/b1c062e93b44f473022297c386d57fa7e58b6aae" class="message" data-pjax="true" title="Remove moot `version` property from bower.json
+
+See https://github.com/bower/bower.json-spec/commit/a325da3
+
+Closes #140
+Thanks for the heads-up @kkirsche!">Remove moot `version` property from bower.json</a>
+          <span class="hidden-text-expander inline">
+            <a href="#" class="js-details-target">…</a>
+          </span>
+    </span>
+
+      <div class="commit-desc"><pre class="text-small">See <a href="https://github.com/bower/spec/commit/a325da3" class="commit-link">bower/spec@<tt>a325da3</tt></a>
+
+Closes <a href="https://github.com/jquery/jquery-mousewheel/pull/140" class="issue-link" title="Remove moot `version` property from bower.json">#140</a>
+Thanks for the heads-up <a href="https://github.com/kkirsche" class="user-mention">@kkirsche</a>!</pre></div>
+  </div>
+
+
+<div class="file-wrap">
+  <a href="/jquery/jquery-mousewheel/tree/b1c062e93b44f473022297c386d57fa7e58b6aae" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><span class="octicon octicon-alert"></span></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/tree/master/test" class="js-directory-link js-navigation-open" id="098f6bcd4621d373cade4e832627b4f6-9dd3f79868c1b0bcf5bf9367b209b623edadc905" title="test">test</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/09bb82c73c5650812e36dfd27d605d64d3ed32b8" class="message" data-pjax="true" title="Fix issue with line height calculation when using older versions of jQuery">Fix issue with line height calculation when using older versions of j…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-02-19T16:37:18Z" is="time-ago">Feb 19, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/.gitignore" class="js-directory-link js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-384a0ee88a099bd04ee437cf87684d2f9c8ef5f8" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/dce320ae63af29458e95ed2b8b00183848bb2e4f" class="message" data-pjax="true" title="add minified source">add minified source</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-04-09T17:33:33Z" is="time-ago">Apr 9, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/.jshintrc" class="js-directory-link js-navigation-open" id="4d5aa81bf4f18104bb6ea53a8b5d1f43-11709d1d529f39c2b25f4205bbd9b2a6da9647e5" title=".jshintrc">.jshintrc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/67485744342372b4604608d89aebddf6ec501473" class="message" data-pjax="true" title="Clean up .jshintrc.">Clean up .jshintrc.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2013-11-15T18:04:39Z" is="time-ago">Nov 15, 2013</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/ChangeLog.md" class="js-directory-link js-navigation-open" id="e705c8fadf1193ab59443a5e6c8cbe8b-76752a1a0d555faf22671a99be7e3bfcddef379f" title="ChangeLog.md">ChangeLog.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/216acc52a1ac90dbde0208272908cd152168feb9" class="message" data-pjax="true" title="Remove the obsolete jQuery Plugin Registry file">Remove the obsolete jQuery Plugin Registry file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-19T19:43:16Z" is="time-ago">Jun 19, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/Gruntfile.js" class="js-directory-link js-navigation-open" id="35b4a816e0441e6a375cd925af50752c-ccae0d03f07f92480a14172f624b0371f0be62b8" title="Gruntfile.js">Gruntfile.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/215c5dd3cfa3d4205e14c1ca0fa603b9463e4aca" class="message" data-pjax="true" title="only jshint against src file">only jshint against src file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-04-09T17:35:38Z" is="time-ago">Apr 9, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/LICENSE.txt" class="js-directory-link js-navigation-open" id="61e0bdf7e1b43c5c93d9488b22e04170-919fe6a7e26bb25e0528b06c9105c5f652703987" title="LICENSE.txt">LICENSE.txt</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/1299f364ca13460c19cd1b1db63bad04541f515a" class="message" data-pjax="true" title="Update license and regenerate the correct compressed version">Update license and regenerate the correct compressed version</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-19T19:41:44Z" is="time-ago">Jun 19, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/README.md" class="js-directory-link js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-a03fdde898b7cea3606607422c23660e92419e9b" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/d6a305cf0e42a140c65bc611e3954da80934261b" class="message" data-pjax="true" title="Transfer ownership to jQuery Foundation">Transfer ownership to jQuery Foundation</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-10-23T15:00:13Z" is="time-ago">Oct 23, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/bower.json" class="js-directory-link js-navigation-open" id="0a08a7565aba4405282251491979bb6b-8abe3bf673398bab14acdb39db0800bf610dc17f" title="bower.json">bower.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/b1c062e93b44f473022297c386d57fa7e58b6aae" class="message" data-pjax="true" title="Remove moot `version` property from bower.json
+
+See https://github.com/bower/bower.json-spec/commit/a325da3
+
+Closes #140
+Thanks for the heads-up @kkirsche!">Remove moot `version` property from bower.json</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-15T18:21:33Z" is="time-ago">Jul 15, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/jquery.mousewheel.js" class="js-directory-link js-navigation-open" id="4bc53473ac2e0f4b8ca2634747be6400-3eadb7edfd212d915c566e15a37768ac7292a32a" title="jquery.mousewheel.js">jquery.mousewheel.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/1299f364ca13460c19cd1b1db63bad04541f515a" class="message" data-pjax="true" title="Update license and regenerate the correct compressed version">Update license and regenerate the correct compressed version</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-19T19:41:44Z" is="time-ago">Jun 19, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/jquery.mousewheel.min.js" class="js-directory-link js-navigation-open" id="253a809adc536d01c54d8039be3ac556-03bfd60c5e4dba7a4402597e1853bedfd6f723d8" title="jquery.mousewheel.min.js">jquery.mousewheel.min.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/1299f364ca13460c19cd1b1db63bad04541f515a" class="message" data-pjax="true" title="Update license and regenerate the correct compressed version">Update license and regenerate the correct compressed version</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-19T19:41:44Z" is="time-ago">Jun 19, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jquery/jquery-mousewheel/blob/master/package.json" class="js-directory-link js-navigation-open" id="b9cfc7f2cdf78a7f4b91a753d10865a2-4848f6bc79cda76faf179da5f9a67c4449c46126" title="package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jquery/jquery-mousewheel/commit/67289b6b2aa0066d7d78a5807f520387135ffb22" class="message" data-pjax="true" title="Version 3.1.13">Version 3.1.13</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-06-19T19:45:38Z" is="time-ago">Jun 19, 2015</time></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+  <div id="readme" class="boxed-group flush clearfix announce instapaper_body md">
+    <h3>
+      <span class="octicon octicon-book"></span>
+      README.md
+    </h3>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1><a id="user-content-jquery-mouse-wheel-plugin" class="anchor" href="#jquery-mouse-wheel-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery Mouse Wheel Plugin</h1>
+
+<p>A <a href="http://jquery.com/">jQuery</a> plugin that adds cross-browser mouse wheel support with delta normalization.</p>
+
+<p>In order to use the plugin, simply bind the <code>mousewheel</code> event to an element.</p>
+
+<p>It also provides two helper methods called <code>mousewheel</code> and <code>unmousewheel</code>
+that act just like other event helper methods in jQuery.</p>
+
+<p>The event object is updated with the normalized <code>deltaX</code> and <code>deltaY</code> properties.
+In addition there is a new property on the event object called <code>deltaFactor</code>. Multiply
+the <code>deltaFactor</code> by <code>deltaX</code> or <code>deltaY</code> to get the scroll distance that the browser
+has reported.</p>
+
+<p>Here is an example of using both the bind and helper method syntax:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// using on</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#my_elem<span class="pl-pds">'</span></span>).<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>mousewheel<span class="pl-pds">'</span></span>, <span class="pl-k">function</span>(<span class="pl-smi">event</span>) {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">event</span>.<span class="pl-smi">deltaX</span>, <span class="pl-smi">event</span>.<span class="pl-smi">deltaY</span>, <span class="pl-smi">event</span>.<span class="pl-smi">deltaFactor</span>);
+});
+
+<span class="pl-c">// using the event helper</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#my_elem<span class="pl-pds">'</span></span>).<span class="pl-en">mousewheel</span>(<span class="pl-k">function</span>(<span class="pl-smi">event</span>) {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">event</span>.<span class="pl-smi">deltaX</span>, <span class="pl-smi">event</span>.<span class="pl-smi">deltaY</span>, <span class="pl-smi">event</span>.<span class="pl-smi">deltaFactor</span>);
+});</pre></div>
+
+<p>The old behavior of adding three arguments (<code>delta</code>, <code>deltaX</code>, and <code>deltaY</code>) to the
+event handler is now deprecated and will be removed in later releases.</p>
+
+<h2><a id="user-content-the-deltas" class="anchor" href="#the-deltas" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Deltas...</h2>
+
+<p>The combination of Browsers, Operating Systems, and Devices offer a huge range of possible delta values. In fact if the user
+uses a trackpad and then a physical mouse wheel the delta values can differ wildly. This plugin normalizes those
+values so you get a whole number starting at +-1 and going up in increments of +-1 according to the force or
+acceleration that is used. This number has the potential to be in the thousands depending on the device.
+Check out some of the data collected from users <a href="http://mousewheeldatacollector.herokuapp.com/">here</a>.</p>
+
+<h3><a id="user-content-getting-the-scroll-distance" class="anchor" href="#getting-the-scroll-distance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting the scroll distance</h3>
+
+<p>In some use-cases we prefer to have the normalized delta but in others we want to know how far the browser should
+scroll based on the users input. This can be done by multiplying the <code>deltaFactor</code> by the <code>deltaX</code> or <code>deltaY</code>
+event property to find the scroll distance the browser reported.</p>
+
+<p>The <code>deltaFactor</code> property was added to the event object in 3.1.5 so that the actual reported delta value can be
+extracted. This is a non-standard property.</p>
+
+<h2><a id="user-content-using-with-browserify" class="anchor" href="#using-with-browserify" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using with <a href="http://browserify.org">Browserify</a></h2>
+
+<p>Support for browserify is baked in.</p>
+
+<div class="highlight highlight-source-shell"><pre>npm install jquery-mousewheel
+npm install jquery-browserify</pre></div>
+
+<p>In your server-side node.js code:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> express <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>express<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> app <span class="pl-k">=</span> <span class="pl-smi">express</span>.<span class="pl-en">createServer</span>();
+
+<span class="pl-smi">app</span>.<span class="pl-en">use</span>(<span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>browserify<span class="pl-pds">'</span></span>)({
+    require <span class="pl-k">:</span> [ <span class="pl-s"><span class="pl-pds">'</span>jquery-browserify<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>jquery-mousewheel<span class="pl-pds">'</span></span> ]
+}));</pre></div>
+
+<p>In your browser-side javascript:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> $ <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>jquery-browserify<span class="pl-pds">'</span></span>);
+<span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>jquery-mousewheel<span class="pl-pds">'</span></span>)($);</pre></div>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.05443s from github-fe124-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <span class="octicon octicon-x"></span>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-b7c9523d93e6cd0235a0a8b7d1a691f7909d3834cd9c9caa7b1674ba508b644c.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-b42430c121e963c7370a99d029c78f3c2fdc9b75b73adf817f07802e33988e81.js"></script>
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+
