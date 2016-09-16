@@ -5,6 +5,13 @@
         <group name="NetBeansProjects">
             <file>file:/home/michael/Projekte/AbbozzaCore/lib/index.html</file>
         </group>
-        <group/>
+        <group>
+            <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/toolbox.xml</file>
+            <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/abbozza.js</file>
+            <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/terminal/terminal.js</file>
+            <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/index.html</file>
+            <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/gui/sliders.js</file>
+            <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/ToolboxMgr.js</file>
+        </group>
     </open-files>
 </project-private>

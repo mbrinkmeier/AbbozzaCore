@@ -73,7 +73,7 @@ public class AbbozzaServer implements HttpHandler {
 //    private static int counter;
 //
 //    private Editor editor;
-    public ByteArrayOutputStream logger;
+//    public ByteArrayOutputStream logger;
 //    private DuplexPrintStream duplexer;
 //    public String sketchbookPath;
 //    public String runtimePath;
@@ -140,7 +140,7 @@ public class AbbozzaServer implements HttpHandler {
             AbbozzaLogger.out("Starting ... ");
 
             // Start ErrorMonitor
-            logger = new ByteArrayOutputStream();
+           //  logger = new ByteArrayOutputStream();
             // duplexer = new DuplexPrintStream(logger, System.err);
             // System.setErr(duplexer);
 
