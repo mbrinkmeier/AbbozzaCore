@@ -48,7 +48,7 @@ Abbozza.init = function(toolbox) {
   window.Blockly = Blockly;
   
   console.log("hier");
-  // this.newSketch();
+  this.newSketch();
 }
 
 
