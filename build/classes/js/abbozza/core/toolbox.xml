@@ -20,6 +20,7 @@ limitations under the License.
   <category name="Entscheidungen" id="conditionals">
      <block type="controls_if"></block>
      <block type="controls_repeat_ext"></block>
+     <block type="conditional_while"></block>
   </category>
   <category name="Rest" id="misc">
     <block type="logic_compare"></block>
