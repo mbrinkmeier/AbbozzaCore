@@ -21,6 +21,7 @@ limitations under the License.
      <block type="controls_if"></block>
      <block type="controls_repeat_ext"></block>
      <block type="conditional_while"></block>
+     <block type="conditional_yn"></block>
   </category>
   <category name="Rest" id="misc">
     <block type="logic_compare"></block>

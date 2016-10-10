@@ -14,6 +14,10 @@
         <msg id="msg.cant_open_standard_browser">Der Standardbrowser kann nicht geöffnet werden!</msg> 
         <msg id="msg.no_board">Kein Board gefunden!</msg> 
         <msg id="msg.board_found">Board gefunden: # an #</msg> 
+        <msg id="msg.ynquestion">Bitte ja oder nein eingeben: </msg>
+        <msg id="msg.regyes">/ja+/i</msg>
+        <msg id="msg.regno">/nein/i</msg>
+        <msg id="msg.unclear">Falsche Eingabe</msg>
     </messages>
     <!--gui>
         <msg id="gui.language">Sprache</msg>         

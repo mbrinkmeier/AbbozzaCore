@@ -51,3 +51,10 @@ Terminal.prototype.getToolbox = function() {
 Terminal.prototype.echo = function(text){
     this._terminal.echo(text);
 }
+
+Terminal.prototype.read = function(text){
+    var line;
+    this._terminal.read(text,function(inserted){line = inserted;});
+    this._terminal.echo(line);
+    return line;
+}
