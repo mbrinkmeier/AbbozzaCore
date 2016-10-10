@@ -47,3 +47,7 @@ Terminal.prototype.getBlocks = function() {
 Terminal.prototype.getToolbox = function() {
     console.log("Terminal.getToolbox()");
 }
+
+Terminal.prototype.echo = function(text){
+    this._terminal.echo(text);
+}

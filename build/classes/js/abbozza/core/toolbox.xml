@@ -27,6 +27,6 @@ limitations under the License.
     <block type="math_number"></block>
     <block type="math_arithmetic"></block>
     <block type="text"></block>
-    <block type="text_print"></block>
+    <block type="echo"></block>
   </category>
 </toolbox>
