@@ -22,12 +22,16 @@ limitations under the License.
      <block type="controls_repeat_ext"></block>
      <block type="conditional_while"></block>
      <block type="conditional_yn"></block>
+     <block type="cond_if"></block>
   </category>
   <category name="Rest" id="misc">
     <block type="logic_compare"></block>
-    <block type="math_number"></block>
+    <block type="my_number"></block>
     <block type="math_arithmetic"></block>
     <block type="text"></block>
     <block type="echo"></block>
+    <block type="my_true"></block>
+    <block type="my_false"></block>
+
   </category>
 </toolbox>
