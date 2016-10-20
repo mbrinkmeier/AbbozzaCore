@@ -19,7 +19,7 @@ limitations under the License.
 <toolbox id="toolbox" style="display: none">
   <category name="Entscheidungen" id="conditionals">
      <block type="controls_if"></block>
-     <block type="controls_repeat_ext"></block>
+     <block type="repeat"></block>
      <block type="conditional_while"></block>
      <block type="conditional_yn"></block>
      <block type="cond_if"></block>
@@ -32,6 +32,11 @@ limitations under the License.
     <block type="echo"></block>
     <block type="my_true"></block>
     <block type="my_false"></block>
-
+  </category>
+  <category name="Test" id="test">
+    <block type="test_text"></block>
+    <block type="test_print"></block>
+    <block type="test_read"></block>
+    <block type="test_concat"></block>
   </category>
 </toolbox>

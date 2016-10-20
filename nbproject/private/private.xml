@@ -2,9 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="NetBeansProjects">
-            <file>file:/home/michael/Projekte/AbbozzaCore/lib/index.html</file>
-        </group>
         <group>
             <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/toolbox.xml</file>
             <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/abbozza.js</file>
@@ -13,5 +10,6 @@
             <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/gui/sliders.js</file>
             <file>file:/home/mbrinkmeier/Projekte/AbbozzaCore/lib/js/abbozza/core/ToolboxMgr.js</file>
         </group>
+        <group name="NetBeansProjects"/>
     </open-files>
 </project-private>

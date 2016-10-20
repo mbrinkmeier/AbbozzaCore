@@ -15,6 +15,11 @@ and open the template in the editor.
         <script src="js/lib/blockly/blockly_compressed.js" type="text/javascript"></script>
         <script src="js/lib/blockly/blocks_compressed.js" type="text/javascript"></script>
         <script src="js/lib/blockly/msg/js/en.js" type="text/javascript"></script>
+        
+        <!-- Added an interpreter class -->
+        <script src="js/abbozza/core/Interpreter.js" type="text/javascript"></script>
+        
+    
         <script src="js/abbozza/core/abbozza.js" type="text/javascript"></script>
         <script src="js/abbozza/core/Locale.js" type="text/javascript"></script>
         <script src="js/abbozza/core/Connection.js" type="text/javascript"></script>
@@ -27,7 +32,11 @@ and open the template in the editor.
         <script src="js/abbozza/core/Environment.js" type ="text/javascript"></script>
         <script src="js/abbozza/terminal/terminal.js" type="text/javascript"></script>
         <script src="js/abbozza/blocks/added_blocks.js" type="text/javascript"></script> 
-        <script src="js/abbozza/blocks/added_generators.js" type="text/javascript"></script>
+        <!-- script src="js/abbozza/blocks/added_generators.js" type="text/javascript"></script -->
+        
+        <!-- Added some test blocks -->
+        <script src="js/abbozza/blocks/test_blocks.js" type="text/javascript"></script> 
+        
         <link rel="stylesheet" href="js/lib/jquery.terminal.css">
 	<script src="js/lib/jquery.terminal-0.11.11.min.js" type="text/javascript"></script>
 	<!--script src="js/lib/jquery-mousewheel.js" type="text/javascript"></script-->
@@ -71,7 +80,7 @@ and open the template in the editor.
         <div id="workspace">Workspace</div> -->
 
 	<xml id="startBlocks" style="display: none">
-            <block type="main" id="main" inline="false" x="100" y="20"></block>
+            <block type="test_main" id="main" inline="false" x="100" y="20"></block>
             <!--block type="devices" id="block_global_vars" inline="false" x="500" y="20"></block-->
             <!--block type="func_setup" id="func_setup" inline="false" x="100" y="20"></block>
             <block type="func_loop" id="func_loop" inline="false" x="400" y="20"></block-->

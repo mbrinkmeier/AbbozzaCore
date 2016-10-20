@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+var envir = new Environment();
 Terminal = function() {
 }
 
@@ -21,10 +21,13 @@ Terminal.prototype = Context;
 
 Terminal.prototype.initView = function (view) {
     this._terminal = $('#context_panel').terminal(
-       function(command,term) {},
+       function(command,term) {
+           console.log("initView callback");
+           term.echo(command);
+       },
        {
-           prompt: "",
-           name: ""
+           prompt: ">> ",
+           name: "abbozza! terminal"
        }
     );
     $('#context_panel').css("overflow","scroll");
@@ -52,9 +55,28 @@ Terminal.prototype.echo = function(text){
     this._terminal.echo(text);
 }
 
+Terminal.prototype.myread = function(prompt, callback) {
+    this._terminal.read(prompt, callback);
+}
+
+Terminal.prototype.focus = function() {
+    this._terminal.focus();
+}
+
+
 Terminal.prototype.read = function(text){
     var line;
-    this._terminal.read(text,function(inserted){line = inserted;});
+    envir.setDone(0);
+    this._terminal.read(text,
+        function(inserted){
+            line = inserted;
+            envir.setDone(1);
+            console.log("Read succesfull");
+        }
+    );
+    while(envir.done == 0){
+        setTimeout(function(){},1000);
+    }
     this._terminal.echo(line);
     return line;
 }
