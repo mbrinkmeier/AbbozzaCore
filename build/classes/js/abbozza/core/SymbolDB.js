@@ -20,6 +20,7 @@ function Symbol(_name,_type,_kind) {
     this.type = _type;
     this.kind = _kind;
     this.value = null;
+    this.global = true;
 }
 
 Symbol.prototype.VARIABLE = 0;
@@ -72,6 +73,27 @@ SymbolDB.prototype.addSymbol = function(name,type,kind) {
     
     var sym = new Symbol(name,type,kind);
     this.symbols.push(sym);
+    console.log(sym);
+    return sym;
+}
+
+SymbolDB.prototype.addSymbol = function(name,type,kind,value,global) {
+    if (!this.checkName(name)) return null;
+    
+    var i = 0;
+    while ( i < this.symbols.length ) {
+           if ( this.symbols[i].name == name ) {
+              console.log("Bereits vorhanden");
+              return  this.symbols[i];
+           }
+        i = i+1;
+    }
+    
+    var sym = new Symbol(name,type,kind);
+    sym.value = value;
+    sym.global = global;
+    this.symbols.push(sym);
+    console.log(sym);
     return sym;
 }
 

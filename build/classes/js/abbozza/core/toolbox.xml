@@ -32,6 +32,8 @@ limitations under the License.
     <block type="echo"></block>
     <block type="my_true"></block>
     <block type="my_false"></block>
+    <block type="create_var"></block>
+    <block type="use_var"></block>
   </category>
   <category name="Test" id="test">
     <block type="test_text"></block>
