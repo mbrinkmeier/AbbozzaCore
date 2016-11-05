@@ -77,7 +77,7 @@ SymbolDB.prototype.addSymbol = function(name,type,kind) {
     return sym;
 }
 
-SymbolDB.prototype.addSymbol = function(name,type,kind,value,global) {
+SymbolDB.prototype.addSymbol2 = function(name,type,kind,value,global) {
     if (!this.checkName(name)) return null;
     
     var i = 0;
