@@ -18,23 +18,27 @@ limitations under the License.
 
 <toolbox id="toolbox" style="display: none">
   <category name="Entscheidungen" id="conditionals">
-     <block type="controls_if"></block>
-     <block type="repeat"></block>
-     <block type="conditional_while"></block>
+     <block type="logic_compare"></block>
      <block type="conditional_yn"></block>
      <block type="cond_if"></block>
+
   </category>
-  <category name="Rest" id="misc">
-    <block type="logic_compare"></block>
-    <block type="my_number"></block>
-    <block type="math_arithmetic"></block>
-    <block type="test_text"></block>
-    <block type="test_print"></block>
-    <block type="my_true"></block>
-    <block type="my_false"></block>
+  <category name ="Schleifen" id ="loops">
+     <block type = "conditional_while"></block>
+     <block type="repeat"></block>
+     <block type="do_while"></block>
   </category>
-  <category name="Test" id="test">
-    <block type="test_read"></block>
-    <block type="test_concat"></block>
+  <category name="Werte" id="misc">
+     <block type="my_number"></block>
+     <block type="test_text"></block>
+     <block type="my_true"></block>
+     <block type="my_false"></block> 
+  </category>
+  <category name = "IO" id = "io">
+     <block type="test_print"></block>
+  </category>
+  <category name="Rest" id="rest">     
+     <block type="math_arithmetic"></block>
+     <block type="test_concat"></block>
   </category>
 </toolbox>

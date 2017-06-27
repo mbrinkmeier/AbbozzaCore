@@ -26,7 +26,7 @@ function Symbol(_name,_type,_kind) {
 Symbol.prototype.VARIABLE = 0;
 Symbol.prototype.PARAMETER = 1;
 Symbol.prototype.OPERATION = 2;
-
+Symbol.prototype.COUNT = 0;
 
 
 function SymbolDB(_parent) {
@@ -40,6 +40,16 @@ SymbolDB.prototype.checkName = function(name) {
     return name.match(/.[_a-zA-Z]*[^\s]/);
 }
 
+
+SymbolDB.prototype.getSymbol2 = function(pos){
+    if(this.symbols.length < pos|| pos < 0){return null;}
+    return this.symbols[pos];
+}
+
+
+SymbolDB.prorotype.getLength = function(){
+    return this.symbols.length;
+}
 
 
 SymbolDB.prototype.getSymbol = function(name) {
@@ -66,7 +76,9 @@ SymbolDB.prototype.addSymbol = function(name,type,kind) {
     var i = 0;
     while ( i < this.symbols.length ) {
            if ( this.symbols[i].name == name ) {
-              return  this.symbols[i];
+              name = name+Symbol.COUNT;
+              Symbol.COUNT++;
+               //return  this.symbols[i];
            }
         i = i+1;
     }
@@ -83,8 +95,10 @@ SymbolDB.prototype.addSymbol2 = function(name,type,kind,value,global) {
     var i = 0;
     while ( i < this.symbols.length ) {
            if ( this.symbols[i].name == name ) {
-              console.log("Bereits vorhanden");
-              return  this.symbols[i];
+              console.log("Bereits vorhanden, wird als "+name+Symbol.COUNT+" angelegt");
+              name = name+Symbol.COUNT;
+              Symbol.COUNT++;
+              //return  this.symbols[i];
            }
         i = i+1;
     }
@@ -95,5 +109,9 @@ SymbolDB.prototype.addSymbol2 = function(name,type,kind,value,global) {
     this.symbols.push(sym);
     console.log(sym);
     return sym;
+}
+
+SymbolDB.prototype.reset = function(){
+    this.symbols = new Array();
 }
 
