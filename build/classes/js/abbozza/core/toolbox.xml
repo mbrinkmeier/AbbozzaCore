@@ -40,5 +40,9 @@ limitations under the License.
   <category name="Rest" id="rest">     
      <block type="math_arithmetic"></block>
      <block type="test_concat"></block>
+     <block type="use_vars"></block>
+     <block type="set_var"></block>
+ 
   </category>
+
 </toolbox>
