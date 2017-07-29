@@ -26,6 +26,9 @@ function Symbol(_name,_type,_kind) {
 Symbol.prototype.getType = function(){
     return this.type;
 }
+Symbol.prototype.toString = function(){
+    return "Name: "+this.name+"\n Typ: "+this.type+"\n Art: "+this.kind;
+}
 Symbol.prototype.VARIABLE = 0;
 Symbol.prototype.PARAMETER = 1;
 Symbol.prototype.OPERATION = 2;
