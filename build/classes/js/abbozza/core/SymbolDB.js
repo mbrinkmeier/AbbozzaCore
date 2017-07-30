@@ -15,12 +15,12 @@
  */
 
 
-function Symbol(_name,_type,_kind) {
+function Symbol(_name,_type,_kind,_global) {
     this.name = _name;
     this.type = _type;
     this.kind = _kind;
     this.value = null;
-    this.global = true;
+    this.global = _global;
     this.count = null;
 }
 Symbol.prototype.getType = function(){
@@ -149,7 +149,7 @@ SymbolDB.prototype.checkUsed = function(name){
  * @return {Boolean} - If the delete was succesfull or not
  */
 SymbolDB.prototype.delete = function(name){
-    for(var i = 0; i < this,getLength(); i++){
+    for(var i = 0; i < this.getLength(); i++){
         if(this.symbols[i].name == name){
             this.symbols = this.symbols.splice(i,1);
             return true;
@@ -158,4 +158,59 @@ SymbolDB.prototype.delete = function(name){
     return false;
 }
 
-
+/**
+ * Thsi methods sets a Symbol to a given value.
+ * @param {String} name - the name of the symbol
+ * @return {undefined}
+ */
+SymbolDB.prototype.setSymbol = function(name,value){
+    console.log("Suche: "+name);
+    var set = false;
+    for(var i = 0; i < this.getLength();i++){
+        console.log("Gefunden: "+this.symbols[i].name);
+        if(this.symbols[i].name == name){
+            set = true;
+            console.log("Type: "+this.symbols[i].type);           
+            console.log("Type of variable: "+this.symbols[i].type+"\n Typeof value: "+ typeof value); //Entscheidung
+            if(this.symbols[i].type == "number"){
+                if(!isNaN(parseInt(value))){
+                    this.symbols[i].value= value;
+                }
+                else{
+                    this.symbols[i].value = 0;
+                    console.log("Konnte übergebenen String nicht parsen");
+                }
+            }else
+            if(this.symbols[i].type == typeof value){
+                this.symbols[i].value = value;
+                
+            }
+            else{
+                console.log("Typen stimmen nicht überein! Defaults werden gesetzt!"); //Entscheidung
+                
+                switch (this.symbols[i].type){
+                    case "string":
+                        this.symbols[i].value = '';
+                        break;
+                    case "int":
+                        this.symbols[i].value = 0;
+                        break;
+                    case "boolean":
+                        this.symbols[i].value = false;
+                        break;
+                    case "function":
+                        this.symbols[i].value = function(){};
+                        break;
+                    default:
+                        this.symbols[i].value = null;
+                }
+         
+            }
+            
+            
+        }
+    }
+    if(!set){
+        console.log("Keine übereinstimmende Variable gefunden"); //Entscheidung
+    }
+}
