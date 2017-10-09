@@ -5,6 +5,9 @@
         <group name="NetBeansProjects"/>
         <group>
             <file>file:/F:/Uni/Bachelorarbeit/AbbozzaCore/lib/js/abbozza/blocks/test_blocks.js</file>
+            <file>file:/F:/Uni/Bachelorarbeit/AbbozzaCore/lib/js/abbozza/core/toolbox.xml</file>
+            <file>file:/F:/Uni/Bachelorarbeit/AbbozzaCore/lib/js/abbozza/core/SymbolDB.js</file>
+            <file>file:/F:/Uni/Bachelorarbeit/AbbozzaCore/lib/js/abbozza/blocks/added_blocks.js</file>
         </group>
     </open-files>
 </project-private>

@@ -125,7 +125,7 @@ Abbozza.Main = {
 
 };
 */
-
+/*
 Blockly.Blocks['main'] = {
 
     symbols: null,
@@ -164,4 +164,4 @@ Blockly.Blocks['main'] = {
     var interval = setInterval(exec,100);
    
   }
-};
+};*/
